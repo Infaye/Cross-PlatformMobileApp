@@ -57,6 +57,16 @@
                     BackgroundColor="DarkGray"
                     TextColor="White"
                     Clicked="GetWeatherBtn_Clicked" />
+            
+            <Button x:Name="getWeatherDetailBtn" Text="Get      Detail" 
+                    Grid.Row="2" Grid.Column="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderWidth="1"
+                    BorderColor="White"
+                    BackgroundColor="DarkGray"
+                    TextColor="White"
+                    Clicked="UpPageBtn_Clicked" />
         </Grid>
 
         <ScrollView VerticalOptions="FillAndExpand">

@@ -10,8 +10,10 @@ namespace WeatherApp
 		public App ()
 		{
 			InitializeComponent();
+            var indexPage = new WeatherPage();
+            Core.SetPage("index",indexPage);
+            MainPage = new NavigationPage(indexPage);
 
-			MainPage = new NavigationPage(new WeatherPage());
         }
 
 		protected override void OnStart ()

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.WeatherDetail"
+             Title="DetailInfo Weather App">
+    <StackLayout>
+        <Button x:Name="up" Text="Up Page" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderWidth="1"
+                    BorderColor="Blue"
+                    BackgroundColor="DarkGray"
+                    TextColor="Black"
+                    Clicked="UpPage_Clicked" />
+
+        <Button x:Name="down" Text="Down Page" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderWidth="1"
+                    BorderColor="Blue"
+                    BackgroundColor="DarkGray"
+                    TextColor="Black"
+                    Clicked="DownPage_Clicked" />
+    </StackLayout>
+</ContentPage>

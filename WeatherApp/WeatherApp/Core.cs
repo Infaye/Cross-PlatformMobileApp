@@ -1,10 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace WeatherApp
 {
     public class Core
     {
+
+        protected static Dictionary<string, Page> Pages = new Dictionary<string, Page>();
+
+        public static void SetPage(string pageName,Page page)
+        {
+            Pages.Add(pageName, page);
+        }
+
+        public static Page GetPage(string pageName)
+        {
+            return Pages[pageName];
+        }
+
+
         public static async Task<Weather> GetWeather(string zipCode)
         {
             //Sign up for a free API key at http://openweathermap.org/appid  

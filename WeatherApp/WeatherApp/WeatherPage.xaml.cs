@@ -9,6 +9,7 @@ namespace WeatherApp
         {
             InitializeComponent();
 
+            
             //Set the default binding to a default object for now  
             BindingContext = new Weather();
         }
@@ -22,5 +23,12 @@ namespace WeatherApp
                 getWeatherBtn.Text = "Search Again";
             }
         }
+        private async void UpPageBtn_Clicked(object sender, EventArgs e)
+        {
+            await this.Navigation.PushAsync(new WeatherDetail());
+        }
+
+
+        
     }
 }
